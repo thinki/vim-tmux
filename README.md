@@ -9,6 +9,8 @@
 8. ensure the $TERM env is set to "screen-256color"
 9. enjoy your day :-)
 
+#tips:
+1. you may add "setw -g mode-keys vi" to fix copy-mode key 'v' problem
 
 #reference:
 1. http://www.jianshu.com/p/d22b63ba0849
