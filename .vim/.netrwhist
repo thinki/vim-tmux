@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/home/jim/ipcam_linux/users/network/networkmanager'
-let g:netrw_dirhist_2='/opt/.repo/manifests.git'
-let g:netrw_dirhist_3='/opt/linux-xlnx/drivers/mtd/chips'
-let g:netrw_dirhist_4='/opt/N1/script'
-let g:netrw_dirhist_5='/home/jim/ipcam_linux/users/drivers/wifi/rtl8188eus/.formosa'
-let g:netrw_dirhist_6='/home/jim/ipcam_linux/linux-3.10/drivers/net/wireless/rtlwifi/rtl8188ee'

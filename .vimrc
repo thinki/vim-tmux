@@ -1,5 +1,31 @@
+" vundle environment
+set rtp+=~/.vim/bundle/Vundle.vim
+
+" plugin name must be set between vundle#begin() and vundle#end()
+call vundle#begin()
+Plugin 'vim-scripts/taglist.vim'
+Plugin 'mbbill/code_complete'
+Plugin 'sickill/vim-monokai'
+Plugin 'wesleyche/Trinity'
+Plugin 'wesleyche/SrcExpl'
+"Plugin 'scrooloose/nerdtree'
+Plugin 'simplyzhao/cscope_maps.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
+call vundle#end()
+
+" Open and close all the three plugins on the same time
+nnoremap <silent> <F7> :TrinityToggleAll<CR>
+" Open and close the srcexpl.vim separately
+nnoremap <silent> <F9> :TrinityToggleSourceExplorer<CR>
+" Open and close the taglist.vim separately
+nnoremap <silent> <F10> :TrinityToggleTagList<CR>
+" Open and close the NERD_tree.vim separately
+nnoremap <silent> <F12> :TrinityToggleNERDTree<CR>
+" Open NERDTree
+nnoremap <silent> <F5> :NERDTree<CR>
+
 "toggle line numbers
-map <F5> <Esc>:set invnumber<CR> 
+map <F3> <Esc>:set invnumber<CR>
 
 set number
 "check file type
@@ -50,40 +76,28 @@ endif
 
 "color scheme
 set t_Co=256
-colorscheme monokai_origin
+colorscheme monokai
+
+" my color scheme patch
+" function match
 autocmd BufNewFile,BufRead * :syntax match cfunctions "\<[a-zA-Z_][a-zA-Z_0-9]*\>[^()]*)("me=e-2 
 autocmd BufNewFile,BufRead * :syntax match cfunctions "\<[a-zA-Z_][a-zA-Z_0-9]*\>\s*("me=e-1
-hi cfunctions ctermfg=81
+hi cfunctions ctermfg=81 guifg=#a6e22e guibg=NONE gui=italic
+" type color
 hi Type ctermfg=81 cterm=none 
 "hi Structure ctermfg=118 cterm=none
+" macro color
 hi Macro ctermfg=197 cterm=none
 hi PreCondit ctermfg=161 cterm=bold
 set cursorline
 "hi CursorLine cterm=bold term=bold ctermbg=white
-
-hi MyTagListFileName	ctermfg=197	
-hi MyTagListTagName		ctermfg=81
-hi MyTagListTitle		ctermfg=154
-hi MyTagListComment		ctermfg=197
-hi MyTagListTagScope	ctermfg=197
-
-"""""""""""""""""Taglist设置"""""""""""""""""         
-map <F3> : Tlist<CR>  ""按下F3就可以呼出了
-"let Tlist_Auto_Open = 1  "open taglist by default
-let Tlist_Ctags_Cmd = '/usr/bin/ctags'  "ctags bin path
-let Tlist_Use_Right_Window=0 "0: display on the left 1:display on the right
-let Tlist_Show_One_File=0 "display the tag for the current file
-let Tlist_File_Fold_Auto_Close=1 "
-let Tlist_Exit_OnlyWindow=1 "auto exit
-"let Tlist_Use_SingleClick= 1    "
-"let Tlist_Process_File_Always=0  "
 
 "tmux background compatibility
 "if exists('$TMUX')
 "	set term=screen-256color
 "endif
 
-"powerline status
+"powerline status setting
 set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim
 
 " These lines setup the environment to show graphics and colors correctly.
@@ -107,3 +121,4 @@ endif
 set laststatus=2 " Always display the statusline in all windows
 set guifont=Inconsolata\ for\ Powerline:h14
 set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
+
