@@ -1,3 +1,5 @@
+![Alt text](screenshot.png)
+
 #vim
 1. install vundle plugin manager to ~/.vim/bundle/ directory
 1. overwrite ~/.vimrc with .vimrc
