@@ -6,26 +6,33 @@ call vundle#begin()
 Plugin 'vim-scripts/taglist.vim'
 Plugin 'mbbill/code_complete'
 Plugin 'sickill/vim-monokai'
-Plugin 'wesleyche/Trinity'
+"Plugin 'wesleyche/Trinity'
 Plugin 'wesleyche/SrcExpl'
-"Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdtree'
 Plugin 'simplyzhao/cscope_maps.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'hari-rangarajan/CCTree'
+Plugin 'tczengming/autoload_cscope.vim'
 call vundle#end()
 
-" Open and close all the three plugins on the same time
-nnoremap <silent> <F7> :TrinityToggleAll<CR>
-" Open and close the srcexpl.vim separately
-nnoremap <silent> <F9> :TrinityToggleSourceExplorer<CR>
-" Open and close the taglist.vim separately
-nnoremap <silent> <F10> :TrinityToggleTagList<CR>
-" Open and close the NERD_tree.vim separately
-nnoremap <silent> <F12> :TrinityToggleNERDTree<CR>
-" Open NERDTree
-nnoremap <silent> <F5> :NERDTree<CR>
+nnoremap <silent> <F3> :set number!<CR>
+nnoremap <silent> <F5> :NERDTreeToggle<CR>
+nnoremap <silent> <F9> :TlistToggle<CR>
+set splitright
+set splitbelow
+let g:NERDTreeWinPos="right"
 
-"toggle line numbers
-map <F3> <Esc>:set invnumber<CR>
+
+"tagList自动打开
+let Tlist_Auto_Open=1
+"只显示当前文件的tags
+let Tlist_Show_One_File=1
+"设置taglist宽度
+let Tlist_WinWidth=30
+"tagList窗口是最后一个窗口，则退出Vim
+let Tlist_Exit_OnlyWindow=1
+"在Vim窗口左侧显示taglist窗口
+let Tlist_Use_Left_Window=1
 
 set number
 "check file type
