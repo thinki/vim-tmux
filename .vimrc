@@ -10,7 +10,7 @@ Plugin 'sickill/vim-monokai'
 Plugin 'wesleyche/SrcExpl'
 Plugin 'scrooloose/nerdtree'
 Plugin 'simplyzhao/cscope_maps.vim'
-Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'Yggdroot/LeaderF'
 Plugin 'hari-rangarajan/CCTree'
 Plugin 'tczengming/autoload_cscope.vim'
 call vundle#end()
@@ -21,6 +21,7 @@ nnoremap <silent> <F9> :TlistToggle<CR>
 set splitright
 set splitbelow
 let g:NERDTreeWinPos="right"
+let g:Lf_ShortcutF = '<C-P>'
 
 
 "tagList自动打开
