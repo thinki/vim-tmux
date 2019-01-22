@@ -59,7 +59,7 @@ set noexpandtab
 autocmd filetype python setlocal tabstop=4 tabstop=4 shiftwidth=4 softtabstop=4 expandtab
 
 set list
-set listchars=tab:▸\
+set listchars=tab:▸\ 
 
 "{} match
 set showmatch
