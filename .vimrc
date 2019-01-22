@@ -41,7 +41,7 @@ filetype on
 filetype plugin on
 filetype indent on
 
-"history record line length   
+"history record line length
 set history=1000
 
 "autoindent
@@ -59,9 +59,9 @@ set noexpandtab
 autocmd filetype python setlocal tabstop=4 tabstop=4 shiftwidth=4 softtabstop=4 expandtab
 
 set list
-set listchars=tab:▸\ 
+set listchars=tab:▸\
 
-"{} match 
+"{} match
 set showmatch
 
 "show cursor when editing
@@ -72,7 +72,7 @@ set hlsearch
 
 set pastetoggle=<F2>
 
-"increamental search 
+"increamental search
 set incsearch
 
 "auto backup
@@ -88,11 +88,11 @@ colorscheme monokai
 
 " my color scheme patch
 " function match
-autocmd BufNewFile,BufRead * :syntax match cfunctions "\<[a-zA-Z_][a-zA-Z_0-9]*\>[^()]*)("me=e-2 
+autocmd BufNewFile,BufRead * :syntax match cfunctions "\<[a-zA-Z_][a-zA-Z_0-9]*\>[^()]*)("me=e-2
 autocmd BufNewFile,BufRead * :syntax match cfunctions "\<[a-zA-Z_][a-zA-Z_0-9]*\>\s*("me=e-1
 hi cfunctions ctermfg=81 guifg=#a6e22e guibg=NONE gui=italic
 " type color
-hi Type ctermfg=81 cterm=none 
+hi Type ctermfg=81 cterm=none
 "hi Structure ctermfg=118 cterm=none
 " macro color
 hi Macro ctermfg=197 cterm=none
@@ -108,9 +108,9 @@ set cursorline
 " These lines setup the environment to show graphics and colors correctly.
 set nocompatible
 set t_Co=256
- 
+
 let g:minBufExplForceSyntaxEnable = 1
- 
+
 if ! has('gui_running')
    set ttimeoutlen=10
    augroup FastEscape
@@ -119,7 +119,7 @@ if ! has('gui_running')
       au InsertLeave * set timeoutlen=1000
    augroup END
 endif
- 
+
 set laststatus=2 " Always display the statusline in all windows
 set guifont=Inconsolata\ for\ Powerline:h14
 set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
