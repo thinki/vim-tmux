@@ -7,23 +7,10 @@
 1. after installation success, enjoy you vim journey :-P
 
 # vim-tmux
-1. install powerline-status
-	```
-	sudo -E pip install powerline-status
-	```
-	or
-	```
-	pip install --user powerline-status
-	```
-	Remember to add path to $PATH for "--user" case
-1. append ". /usr/local/lib/python2.7/dist-packages/powerline/bindings/bash/powerline.sh" to your .bashrc
+1. append misc setting to your bashrc
 	```
 	if [ -d ~/bin ]; then
 		export PATH=$PATH:~/bin
-	fi
-
-	if [ -f /usr/local/lib/python2.7/dist-packages/powerline/bindings/bash/powerline.sh ]; then
-		. /usr/local/lib/python2.7/dist-packages/powerline/bindings/bash/powerline.sh
 	fi
 
 	# fix $TERM for gnome-terminal outside of tmux
@@ -32,13 +19,6 @@
 	fi
 
 	export EDITOR=vim
-	```
-1. reboot the system and open a new gnome-terminal to make sure powerline-status works OK.
-1. install the patched font from https://github.com/powerline/fonts.git to correct display pattern issues
-	after git clone:
-	```
-	cd fonts
-	./install
 	```
 1. download tmux theme from https://github.com/gpakosz/.tmux and checkout into the branch identical to your tmux 1ersion
 1. you need to upgrade your tmux (use 3rd party ppa) in Ubuntu 14.04 as it is v1.8 and too old to support the gpakosz's theme
@@ -50,7 +30,7 @@
 1. install the theme as the gpakosz's manual
 	```
 	cd .tmux
-	ln -s .tmux.conf ~/.tmux.conf
+	ln -s `pwd`/.tmux.conf ~/.tmux.conf
 	cp .tmux.conf.local ~
 	```
 1. ensure the $TERM env is set to "screen-256color"
