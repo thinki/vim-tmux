@@ -36,6 +36,23 @@
 1. ensure the $TERM env is set to "screen-256color"
 1. enjoy your day :-)
 
+# zsh install
+1. refer to https://www.cnblogs.com/EasonJim/p/7863099.html to install zsh and oh-my-zsh
+1. add zsh-autosuggestions and append config at the end of ~/.zshrc:
+	```
+	# fix $TERM for gnome-terminal outside of tmux
+	if [ -z $TMUX ]&&[ "$COLORTERM" '==' "gnome-terminal" ]; then
+		export TERM=xterm-256color
+	fi
+
+	export EDITOR=vim
+
+	bindkey '^ ' autosuggest-accept
+	# disable software flow ctrl in vim
+	stty -ixon
+
+	```
+
 #tips:
 1. you may add "setw -g mode-keys vi" to the config to fix the copy-mode key 'v' problem
 1. nerdtree source may not work correctly, so use the one within trinity instead
