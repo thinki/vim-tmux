@@ -52,6 +52,15 @@
 	stty -ixon
 
 	```
+1. add command-not-found oh-my-zsh plugin to enable command prompt like:
+	```
+	Command 'unidef' not found, did you mean:
+
+	  command 'unifdef' from deb unifdef
+
+	Try: sudo apt install <deb name>
+	```
+
 
 #tips:
 1. you may add "setw -g mode-keys vi" to the config to fix the copy-mode key 'v' problem
