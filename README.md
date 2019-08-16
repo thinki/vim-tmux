@@ -1,6 +1,6 @@
 ![Alt text](screenshot.png)
 
-#vim
+# vim
 1. install vundle plugin manager from https://github.com/VundleVim/Vundle.vim.git and copy it to ~/.vim/bundle/ directory
 1. overwrite ~/.vimrc with .vimrc
 1. open vim and input PluginInstall in command mode
@@ -62,11 +62,11 @@
 	```
 
 
-#tips:
+# tips:
 1. you may add "setw -g mode-keys vi" to the config to fix the copy-mode key 'v' problem
 1. nerdtree source may not work correctly, so use the one within trinity instead
 
-#reference:
+# reference:
 1. http://www.jianshu.com/p/d22b63ba0849
 1. http://cenalulu.github.io/linux/tmux/
 1. http://jay75328.blogspot.tw/2015/05/vim-source-insight.html
