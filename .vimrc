@@ -13,6 +13,7 @@ Plugin 'simplyzhao/cscope_maps.vim'
 Plugin 'Yggdroot/LeaderF'
 Plugin 'hari-rangarajan/CCTree'
 Plugin 'tczengming/autoload_cscope.vim'
+Plugin 'tpope/vim-fugitive.git'
 call vundle#end()
 
 nnoremap <silent> <F3> :set number!<CR>
