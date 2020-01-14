@@ -23,6 +23,7 @@ set splitright
 set splitbelow
 let g:NERDTreeWinPos="right"
 let g:Lf_ShortcutF = '<C-P>'
+let g:Lf_UseVersionControlTool = 0
 
 
 "tagList自动打开
