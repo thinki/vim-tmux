@@ -1,6 +1,7 @@
 ![Alt text](screenshot.png)
 
 # vim
+1. for vim with system clip board support, you need to install vim-gnome package in Ubuntu
 1. install vundle plugin manager from https://github.com/VundleVim/Vundle.vim.git and copy it to ~/.vim/bundle/ directory
 1. overwrite ~/.vimrc with .vimrc
 1. open vim and input PluginInstall in command mode
