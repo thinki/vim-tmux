@@ -34,6 +34,20 @@
 	ln -s `pwd`/.tmux.conf ~/.tmux.conf
 	cp .tmux.conf.local ~
 	```
+1. To set the prefix to default value, comment below lines
+	```
+	set -g prefix2 C-a
+	bind C-a send-prefix -2
+	```
+1. To increate history size, uncomment below lines, suggest to change to 50000:
+	```
+	#set -g history-limit 10000
+	```
+1. To force tmux into vim mode, uncomment below lines:
+	```
+	#set -g status-keys vi
+	#set -g mode-keys vi
+	```
 1. ensure the $TERM env is set to "screen-256color"
 1. enjoy your day :-)
 
