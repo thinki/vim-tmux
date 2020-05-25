@@ -76,6 +76,19 @@
 	Try: sudo apt install <deb name>
 	```
 
+# git ssh config
+1. To avoid config user for git ssh protocol, create ~/.ssh/config file and fill host and user info like:
+	```
+	Host A.com
+		hostname A.com
+		user XXX
+	Host B.intel.com
+		hostname B.com
+		user XXX
+	Host C.com
+		hostname C.com
+		user XXX
+	```
 
 # tips:
 1. you may add "setw -g mode-keys vi" to the config to fix the copy-mode key 'v' problem
