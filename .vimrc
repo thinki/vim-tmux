@@ -24,6 +24,7 @@ set splitbelow
 let g:NERDTreeWinPos="right"
 let g:Lf_ShortcutF = '<C-P>'
 let g:Lf_UseVersionControlTool = 0
+" let g:Lf_RecurseSubmodules = 1
 
 
 "tagList自动打开
@@ -99,6 +100,7 @@ hi Type ctermfg=81 cterm=none
 " macro color
 hi Macro ctermfg=197 cterm=none
 hi PreCondit ctermfg=161 cterm=bold
+hi comment ctermfg=2
 set cursorline
 "hi CursorLine cterm=bold term=bold ctermbg=white
 
