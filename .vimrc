@@ -16,6 +16,9 @@ Plugin 'tczengming/autoload_cscope.vim'
 Plugin 'tpope/vim-fugitive.git'
 call vundle#end()
 
+" fix duplicate cscope database not added error on Fedora
+set nocscopeverbose
+
 nnoremap <silent> <F3> :set number!<CR>
 nnoremap <silent> <F5> :NERDTreeToggle<CR>
 nnoremap <silent> <F9> :TlistToggle<CR>
